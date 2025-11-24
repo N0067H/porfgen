@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white
+}
+
+:root {
+  --bg: #151b23;
+  --panel: #3f454b;
+  --panel-2: #2b2f33;
+  --text: #e6eef3;
+  --accent: #10b981;
+  --danger: #ef4444;
+}
+
+.theme-light {
+  --bg: #f3f4f6;
+  --panel: #ffffff;
+  --panel-2: #f1f5f9;
+  --text: #111827;
+  --accent: #065f46;
+  --danger: #b91c1c;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* App container to provide global centering and spacing */
+.app-container {
+  max-width: 920px;
+  margin: 32px auto;
+  padding: 20px;
+}
+
+.panel {
+  background: var(--panel);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.panel-2 {
+  background: var(--panel-2);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-danger {
+  color: var(--danger);
+}
